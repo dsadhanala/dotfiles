@@ -1,0 +1,102 @@
+atom-workspace,
+atom-text-editor {
+    font-family:  'Ubuntu Mono derivative Powerline', 'Helvetica', 'Arial', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.3;
+    text-rendering: optimizeLegibility;
+}
+
+atom-workspace {
+    .tree-view .list-item {
+        font-size: 13px;
+
+        &.selected {
+            font-weight: 600;
+
+            &::before {
+                background-color: rgba(241, 241, 241, .35);
+            }
+        }
+    }
+
+    .tab-bar .tab .title {
+        font-size: 14px;
+
+        &.active {
+            font-weight: bold;
+        }
+    }
+}
+
+atom-panel.tool-panel {
+    font-size: .88em;
+}
+
+atom-text-editor {
+    font-family: 'Fira Mono for Powerline', sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    background-color: #101010;
+}
+
+atom-text-editor.editor {
+    .syntax--entity.syntax--other.syntax--attribute-name,
+    .syntax--variable.parameter,
+    .syntax--entity.syntax--other.syntax--inherited-class,
+    .syntax--storage.syntax--type,
+    .syntax--entity.syntax--other.syntax--attribute-name.syntax--pseudo-class.syntax--css,
+    .syntax--comment {
+        font-style: italic;
+    }
+
+    .string.quoted,
+    .string.regexp {
+        -webkit-font-feature-settings: 'liga' off, 'calt' off;
+    }
+
+    .wrap-guide {
+        background-color: rgba(0,0,0, .2);
+    }
+
+    // .line.cursor-line{
+    //     border-color: rgba(81,107,119, 0.3);
+    // }
+
+    &.is-focused .line.cursor-line {
+        background-color: rgba(51, 52, 53, 0.2);
+    }
+}
+
+.panel-contrast:not(.tinted-tab-bar) .tab-bar:not([data-reactid]),
+.panel-contrast status-bar,
+.panel-contrast .tree-view,
+atom-text-editor .gutter,
+atom-panel-container.top atom-panel,
+atom-panel-container.bottom atom-panel,
+atom-panel-container.left atom-panel,
+atom-panel-container.right atom-panel,
+atom-panel-container.top .tool-panel,
+atom-panel-container.bottom .tool-panel,
+atom-panel-container.left .tool-panel,
+atom-panel-container.right .tool-panel {
+    background-color: #131212;
+}
+
+atom-text-editor {
+    .vertical-scrollbar {
+        background: rgba(14, 14, 14, 0.59);
+    }
+
+    .line[class*="highlight-line-multi-line-solid-bottom"] {
+        border-color: rgba(81,107,119, 0.3);
+    }
+
+    .syntax--invalid {
+        background-color: rgba(255,0,0,0.2);
+    }
+}
+
+atom-panel-container.left {
+    order: 1;
+}

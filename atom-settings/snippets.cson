@@ -1,0 +1,109 @@
+# Your snippets
+#
+# Atom snippets allow you to enter a simple prefix in the editor and hit tab to
+# expand the prefix into a larger code block with templated values.
+#
+# You can create a new snippet in this file by typing "snip" and then hitting
+# tab.
+#
+# An example CoffeeScript snippet to expand log to console.log:
+#
+# '.source.coffee':
+#   'Console log':
+#     'prefix': 'log'
+#     'body': 'console.log $1'
+#
+# This file uses CoffeeScript Object Notation (CSON).
+# If you are unfamiliar with CSON, you can read more about it here:
+# https://github.com/bevry/cson#what-is-cson
+
+
+################
+# my snippets
+################
+
+# media queries
+'.source.less':
+  'Media Queries':
+    'prefix': 'mq'
+    'body': """
+    .MediaQueries(${1:@desktop}; {
+        ${2://rules}
+    });
+    """
+
+# ES6 export default
+'.source.js':
+  'ES6 export default':
+    'prefix': 'ex'
+    'body': """
+    export default ${1:module}
+    """
+
+# ES6 import
+'.source.js':
+  'ES6 import default':
+    'prefix': 'im'
+    'body': """
+    import ${1:module} from '${1:module}'
+    """
+
+# custom element
+'.source.js':
+    'Custom element':
+        'prefix': 'ce'
+        'body': """
+            class ${1:ElementName} extends HTMLElement {
+                constructor() {
+                    super();
+
+                    // attriubutes to observe for changes
+                    this._attrsToObserve = ['$3:name'];
+
+                    // initialize component and inject markup into shadow dom
+                    this._shadowRoot = this.attachShadow({mode: 'open'});
+                    this._shadowRoot.appendChild(this._template);
+                }
+
+                static get observedAttributes() {
+                    return this._attrsToObserve;
+                }
+
+                connectedCallback() {
+                    this.setAttribute('enhanced', '');
+                    this._renderComponent();
+                }
+
+                disconnectedCallback() {
+                    // remove event handlers here
+                }
+
+                // render component when attribute data changed
+                attributeChangedCallback(attrName, oldVal, newVal) {
+                    this._renderComponent();
+                }
+
+                _template() {
+                    return `
+                        <style>
+                            :host {}
+                            :host([enhanced]) {}
+                        </style>
+                        <section></section>
+                    `;
+                }
+
+                _findEle(selector) {
+                    return this._shadowRoot.querySelector(selector);
+                }
+
+                _renderComponent() {
+                    // do stuff
+                }
+            }
+
+            // publish custom element
+            window.customElements.define('${2:element-name}', ${1:ElementName});
+
+            export default ${1:ElementName};
+        """
