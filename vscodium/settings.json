@@ -1,0 +1,183 @@
+{
+    "workbench.colorTheme": "Boxy Tomorrow",
+    "atomKeymap.promptV3Features": true,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "gitlens.advanced.messages": {
+        "suppressCommitHasNoPreviousCommitWarning": false,
+        "suppressCommitNotFoundWarning": false,
+        "suppressFileNotUnderSourceControlWarning": false,
+        "suppressGitVersionWarning": false,
+        "suppressLineUncommittedWarning": false,
+        "suppressNoRepositoryWarning": false,
+        // "suppressResultsExplorerNotice": false,
+        // "suppressShowKeyBindingsNotice": true
+    },
+    "guides.enabled": false,
+    "workbench.startupEditor": "newUntitledFile",
+    "editor.minimap.enabled": false,
+    "terminal.integrated.fontFamily": "Hack",
+    "workbench.colorCustomizations": {
+        "statusBar.background": "#333",
+        "statusBar.debuggingBackground": "#999",
+        "statusBar.noFolderBackground": "#333",
+        "editorRuler.foreground": "#1a1a1a"
+    },
+    "editor.fontFamily": "'Fira Mono for Powerline', 'CamingoCode', 'Share-TechMonoTrue', 'AverageMonoBold', Menlo, Monaco, monospace",
+    "editor.fontSize": 15,
+    "editor.wordWrap": "on",
+    "terminal.integrated.fontSize": 13,
+    "terminal.integrated.lineHeight": 1.3,
+    "sync.gist": "8b95394e5446c9e5c52c3d0fda495d50",
+    "sync.quietSync": true,
+    "sync.removeExtensions": false,
+    "sync.syncExtensions": true,
+    "sync.autoDownload": true,
+    "sync.autoUpload": true,
+    "sync.forceDownload": false,
+    "gitlens.settings.mode": "advanced",
+    "gitlens.remotes": [
+        {
+            "domain": "https://gist.github.com/",
+            "type": "GitHub"
+        }
+    ],
+    // "gitlens.views.repositories.enabled": true,
+    "gitlens.recentChanges.highlight.locations": [
+        "gutter",
+        "line",
+        "overview"
+    ],
+    "markdown.preview.fontSize": 15,
+    "workbench.fontAliasing": "auto",
+    "breadcrumbs.enabled": true,
+    "instantmarkdown.autoOpenBrowser": false,
+    "instantmarkdown.autoCloseServerAndBrowser": false,
+    "files.autoSaveDelay": 20000,
+    "files.exclude": {
+        ".expo/": true,
+        "*.code-workspace": true,
+        "**/.github": true,
+        "**/.idea": true,
+        "**/.vscode": true,
+        "**/*.log": true,
+        "**/coverage": true,
+        "**/node_modules": true,
+        "**/sslcert": true
+    },
+    "files.trimTrailingWhitespace": true,
+    "window.restoreWindows": "all",
+    "workbench.view.alwaysShowHeaderActions": true,
+    "explorer.confirmDelete": false,
+    "prettier.tabWidth": 4,
+    "prettier.singleQuote": true,
+    "prettier-tslint.tslintIntegration": true,
+    "stylelint.enable": true,
+    "prettier-stylelint.stylelintIntegration": true,
+    "css.validate": false,
+    "scss.validate": false,
+    "eslint.alwaysShowStatus": true,
+    "eslint.nodePath": "/Users/sadhanal/.nvm/versions/node/v8.11.4",
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.foldingStrategy": "indentation",
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "csscomb.formatOnSave": true,
+    "prettier.requireConfig": true,
+    "debug.node.autoAttach": "off",
+    "[scss]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "workbench.sideBar.location": "right",
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "HookyQR.beautify"
+    },
+    "merge-conflict.diffViewPosition": "Below",
+    "[css]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "terminal.integrated.rendererType": "dom",
+    "editor.fontLigatures": true,
+    "workbench.editor.highlightModifiedTabs": true,
+    "explorer.sortOrder": "type",
+    "files.trimFinalNewlines": true,
+    "editor.acceptSuggestionOnEnter": "smart",
+    "editor.cursorSmoothCaretAnimation": "on",
+    "rest-client.fontSize": 13,
+    "debug.console.fontSize": 13,
+    "terminal.integrated.cursorBlinking": true,
+    "editor.cursorBlinking": "smooth",
+    "terminal.integrated.cursorStyle": "line",
+    "files.insertFinalNewline": true,
+    "editor.renderWhitespace": "selection",
+    "window.title": "${activeEditorMedium}${separator}${rootName}",
+    "vscode_custom_css.imports": [
+        "file:////Users/sadhanal/Documents/vs-code-custom.css"
+    ],
+    "vscode_custom_css.policy": true,
+    "sync.forceUpload": true,
+    "files.autoSave": "afterDelay",
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "editor.renderControlCharacters": false,
+    "workbench.editor.showTabs": "multiple",
+    "debug.allowBreakpointsEverywhere": true,
+    "[markdown]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": "never"
+    },
+    "workbench.panel.defaultLocation": "left",
+    "workbench.enableExperiments": false,
+    "typescript.disableAutomaticTypeAcquisition": true,
+    "git.autofetch": true,
+    "explorer.confirmDragAndDrop": false,
+    "[yaml]": {
+        "editor.defaultFormatter": "redhat.vscode-yaml"
+    },
+    "editor.rulers": [
+        110
+    ],
+    "debug.showInlineBreakpointCandidates": false,
+    "markiscodecoverage.searchCriteria": "coverage/lcov.info",
+    // "emmet.triggerExpansionOnTab": true,
+    "files.associations": {
+        "*html": "html"
+    },
+    "editor.formatOnSaveMode": "modifications",
+    "editor.linkedEditing": true,
+    "[dart]": {
+        "editor.formatOnSave": true,
+        "editor.formatOnType": true,
+        "editor.rulers": [
+            80
+        ],
+        "editor.selectionHighlight": false,
+        "editor.suggest.snippetsPreventQuickSuggestions": false,
+        "editor.suggestSelection": "first",
+        "editor.tabCompletion": "onlySnippets",
+        "editor.wordBasedSuggestions": "off"
+    },
+    "terminal.integrated.defaultProfile.osx": "zsh",
+    "security.workspace.trust.untrustedFiles": "open",
+    "liveServer.settings.donotShowInfoMsg": true,
+    "redhat.telemetry.enabled": false,
+    "jupyter.diagnostics.reservedPythonNames.exclude": [
+    ],
+    "cSpell.userWords": [
+        "Lynnwood"
+    ],
+    "editor.accessibilitySupport": "off",
+    "workbench.activityBar.location": "hidden",
+    "quokka.automaticRestart": true,
+    "quokka.compactMessageOutput": true
+}

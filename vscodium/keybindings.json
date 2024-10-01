@@ -1,0 +1,86 @@
+// Empty
+[
+    {
+        "key": "alt+down",
+        "command": "workbench.action.terminal.focusNext"
+    },
+    {
+        "key": "alt+right",
+        "command": "workbench.action.terminal.focusNextPane",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+cmd+h",
+        "command": "workbench.action.togglePanel"
+    },
+    {
+        "key": "cmd+j",
+        "command": "-workbench.action.togglePanel"
+    },
+    {
+        "key": "ctrl+shift+cmd+f5",
+        "command": "workbench.action.debug.restart",
+        "when": "inDebugMode"
+    },
+    {
+        "key": "shift+cmd+f5",
+        "command": "-workbench.action.debug.restart",
+        "when": "inDebugMode"
+    },
+    {
+        "key": "alt+cmd+\\",
+        "command": "editor.action.jumpToBracket",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+cmd+\\",
+        "command": "-editor.action.jumpToBracket",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+cmd+\\",
+        "command": "workbench.files.action.showActiveFileInExplorer"
+    },
+    {
+        "key": "alt+cmd+\\",
+        "command": "-workbench.files.action.showActiveFileInExplorer"
+    },
+    {
+        "key": "shift+cmd+ctrl+/",
+        "command": "editor.action.blockComment",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+cmd+\\",
+        "command": "workbench.action.toggleActivityBarVisibility"
+    },
+    {
+        "key": "ctrl+alt+cmd+z",
+        "command": "workbench.action.toggleZenMode"
+    },
+    {
+        "key": "ctrl+shift+cmd+f",
+        "command": "-workbench.action.toggleZenMode"
+    },
+    {
+        "key": "ctrl+cmd+l",
+        "command": "workbench.action.positionPanelLeft"
+    },
+    {
+        "key": "ctrl+alt+cmd+b",
+        "command": "workbench.action.positionPanelBottom"
+    },
+    {
+        "key": "ctrl+cmd+r",
+        "command": "workbench.action.positionPanelRight"
+    },
+    {
+        "key": "ctrl+cmd+b",
+        "command": "HookyQR.beautify"
+    },
+    {
+        "key": "enter",
+        "command": "-markdown.extension.onEnterKey",
+        "when": "editorTextFocus && !editorReadonly && !suggestWidgetVisible && editorLangId == 'markdown' && vim.mode != 'CommandlineInProgress' && vim.mode != 'EasyMotionInputMode' && vim.mode != 'EasyMotionMode' && vim.mode != 'Normal' && vim.mode != 'Replace' && vim.mode != 'SearchInProgressMode' && vim.mode != 'SurroundInputMode' && vim.mode != 'Visual' && vim.mode != 'VisualBlock' && vim.mode != 'VisualLine'"
+    }
+]
