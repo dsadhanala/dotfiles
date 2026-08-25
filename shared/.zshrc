@@ -80,7 +80,7 @@ ZSH_THEME="obraun"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git)
 
-source $ZSH/oh-my-zsh.sh
+[ -f "$ZSH/oh-my-zsh.sh" ] && source "$ZSH/oh-my-zsh.sh"
 source ~/.bash_profile
 
 # User configuration
@@ -113,7 +113,7 @@ source ~/.bash_profile
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 export PATH="/opt/homebrew/bin:$PATH"
 
-export SDKROOT=$(xcrun --sdk macosx --show-sdk-path)
+command -v xcrun >/dev/null 2>&1 && export SDKROOT=$(xcrun --sdk macosx --show-sdk-path)
 export PATH="/Library/Developer/CommandLineTools/usr/bin/:$PATH"
 
 script_path=$HOME/.cache/zsh-completion
@@ -124,7 +124,7 @@ fi
 # these lines are placed in the specified order when copying into your .zshrc:
 autoload -Uz compinit
 compinit
-source $script_path/_bazel
+[ -f "$script_path/_bazel" ] && source "$script_path/_bazel"
 # Enable caching (optional for faster completions)
 zstyle ':completion:_' use-cache on
 zstyle ':completion:_' cache-path ~/.zsh/cache
