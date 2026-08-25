@@ -1,0 +1,11 @@
+syntax: glob
+
+*~
+.DS_Store
+.cursorindexingignore
+pre-commit
+mcp.json
+package-lock.json
+settings.local.json
+settings.json
+kotlin-compiler-13183137902494445661.salive

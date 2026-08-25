@@ -1,0 +1,29 @@
+# Identity lives in ~/.gitconfig.local (git-ignored). See .gitconfig.local.template
+[include]
+	path = ~/.gitconfig.local
+[pull]
+	rebase = true
+[core]
+	editor = codium
+	excludesfile = ~/.gitignore_global
+	hooksPath = ~/git-hooks
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[merge]
+    tool = codium
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[fetch]
+	prune = true
+[credential]
+	helper = store
+[alias]
+	mergegreen = "!f() {\\n  set -e\\n  git fetch origin green\\n  echo \"Merging green tag -> commit $(git rev-parse \"green\")\"\\n  git merge \"green\"\\n}; f"
+	fetchmerge = "!f() {\n  set -e\n  git fetch origin \"$1\"\n  echo \"Merging tag $1 -> commit $(git rev-parse \"$1\")\"\n  git merge \"$1\"\n}; f"

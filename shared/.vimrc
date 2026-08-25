@@ -33,7 +33,7 @@ set splitright
 set hidden
 
 " syntax and color theme
-colo molokai
+" colo molokai
 syntax on
 
 " search and find files

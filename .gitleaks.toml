@@ -1,0 +1,15 @@
+# gitleaks config for the dotfiles repo.
+# Extends the built-in rules and allowlists the intentional placeholders.
+[extend]
+useDefault = true
+
+[allowlist]
+description = "Templated placeholders and example values that are not real secrets"
+regexes = [
+  '''\$\{[A-Z_][A-Z0-9_]*\}''',   # ${ENV_VAR} placeholders
+  '''your-[a-z-]+''',             # <your-...> style placeholders
+]
+paths = [
+  '''.*\.template$''',
+  '''vscodium/extensions\.txt$''',
+]

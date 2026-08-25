@@ -1,0 +1,215 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "diff_view_style": "unified",
+  "language_models": {
+    "openai_compatible": {
+      "oMLX": {
+        "api_url": "http://127.0.0.1:11434/v1",
+        "available_models": [
+          {
+            "name": "gemma-4-E4B-it-MLX-8bit",
+            "max_tokens": 256000,
+            "max_output_tokens": 256000,
+            "max_completion_tokens": 256000,
+            "capabilities": {
+              "tools": true,
+              "images": true,
+              "parallel_tool_calls": true,
+              "prompt_cache_key": true,
+              "chat_completions": true,
+              "interleaved_reasoning": false
+            }
+          },
+          {
+            "name": "gemma-4-26B-A4B-it-QAT-MLX-4bit",
+            "max_tokens": 256000,
+            "max_output_tokens": 256000,
+            "max_completion_tokens": 256000,
+            "capabilities": {
+              "tools": true,
+              "images": true,
+              "parallel_tool_calls": true,
+              "prompt_cache_key": true,
+              "chat_completions": true,
+              "interleaved_reasoning": false
+            }
+          }
+        ]
+      }
+    },
+    "ollama": {
+      "api_url": "http://localhost:11434/v1",
+    },
+  },
+  "context_server_timeout": 120,
+  "server_url": "",
+  "edit_predictions": {
+    "mode": "subtle",
+    "provider": "ollama",
+    "open_ai_compatible_api": {
+      "model": "gemma-4-26B-A4B-it-QAT-MLX-4bit", //"gemma4:e4b",
+    },
+    "ollama": {
+      "max_output_tokens": 64,
+      "model": "gemma-4-26B-A4B-it-QAT-MLX-4bit",
+    },
+    "codestral": {
+      "model": "codestral-latest",
+    },
+    "allow_data_collection": "no",
+  },
+  "proxy": "",
+  "agent_servers": {
+    "github-copilot-cli": {
+      "default_config_options": {
+        "agent": "writer",
+        "mode": "https://agentclientprotocol.com/protocol/session-modes#agent",
+        "allow_all": "on",
+        "reasoning_effort": "high",
+        "model": "gemini-3.7-flash",
+      },
+      "type": "registry",
+    },
+    "factory-droid": {
+      "type": "registry",
+    },
+    "codex-acp": {
+      "default_config_options": {
+        "mode": "agent",
+        "reasoning_effort": "high",
+      },
+      "type": "registry",
+    },
+    "claude-acp": {
+      "default_config_options": {
+        "mode": "auto",
+        "effort": "high",
+        "model": "opus[1m]",
+      },
+      "favorite_config_option_values": {
+        "model": ["opus[1m]", "sonnet"],
+      },
+      "type": "registry",
+    },
+    "auggie": {
+      "default_config_options": {
+        "model": "prism-a",
+      },
+      "default_mode": "ask",
+      "type": "registry",
+    },
+  },
+  "project_panel": {
+    "dock": "right",
+  },
+  "outline_panel": {
+    "dock": "right",
+  },
+  "collaboration_panel": {
+    "button": false,
+    "dock": "right",
+  },
+  "agent": {
+    "default_profile": "ask",
+    "default_model": {
+      "provider": "oMLX",
+      "model": "gemma-4-E4B-it-MLX-8bit",
+      "enable_thinking": false
+    },
+    "play_sound_when_agent_done": "when_hidden",
+    "single_file_review": true,
+    "enable_feedback": false,
+    "dock": "left",
+    "favorite_models": [],
+    "model_parameters": [],
+    "commit_message_model": {
+      // "provider": "ollama",
+      // "model": "gemma4:e4b",
+      "provider": "copilot_chat",
+      "model": "gemini-3.7-flash",
+    },
+  },
+  "git_panel": {
+    "tree_view": false,
+    "dock": "right",
+  },
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false,
+  },
+  "terminal": {
+    "button": false,
+    "font_size": 13.0,
+    "font_family": "Hack",
+    "line_height": {
+      "custom": 1.3,
+    },
+    "cursor_shape": "bar",
+    "blinking": "on",
+  },
+  "tab_bar": {
+    "show": true,
+  },
+  "multi_cursor_modifier": "cmd_or_ctrl",
+  "minimap": {
+    "show": "never",
+  },
+  "cursor_blink": true,
+  "autosave": {
+    "after_delay": {
+      "milliseconds": 20000,
+    },
+  },
+  "buffer_font_fallbacks": [
+    "CamingoCode",
+    "Share-TechMonoTrue",
+    "Fira Mono for Powerline",
+    "AverageMonoBold",
+    "Menlo",
+    "Monaco",
+    "monospace",
+  ],
+  "buffer_font_family": "Fira Code",
+  "file_types": {
+    "html": ["*html"],
+  },
+  "linked_edits": true,
+  "show_whitespaces": "selection",
+  "ensure_final_newline_on_save": true,
+  "wrap_guides": [110],
+  "soft_wrap": "editor_width",
+  "base_keymap": "VSCode",
+  "remove_trailing_whitespace_on_save": true,
+  "buffer_font_features": {
+    "calt": true,
+  },
+  "file_scan_exclusions": [
+    "**/.expo",
+    "**/.github",
+    "**/.idea",
+    "**/.vscode",
+    "**/*.log",
+    "**/coverage",
+    "**/node_modules",
+    "**/sslcert",
+  ],
+  "icon_theme": {
+    "mode": "system",
+    "light": "Zed (Default)",
+    "dark": "Material Icon Theme",
+  },
+  "ui_font_size": 16,
+  "buffer_font_size": 14,
+  "theme": {
+    "mode": "dark",
+    "light": "Ayu Light",
+    "dark": "Ayu Dark",
+  },
+}

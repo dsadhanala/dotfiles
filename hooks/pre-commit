@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# Block commits that contain secrets. Requires gitleaks (brew install gitleaks).
+set -euo pipefail
+
+if command -v gitleaks >/dev/null 2>&1; then
+  echo "gitleaks: scanning staged changes..."
+  if ! gitleaks protect --staged --redact --config .gitleaks.toml; then
+    echo "gitleaks: secrets detected — commit blocked." >&2
+    exit 1
+  fi
+else
+  echo "WARNING: gitleaks not installed; skipping secret scan." >&2
+  echo "  Install with: brew install gitleaks" >&2
+fi

@@ -22,22 +22,22 @@
         "statusBar.noFolderBackground": "#333",
         "editorRuler.foreground": "#1a1a1a"
     },
-    "editor.fontFamily": "'Fira Mono for Powerline', 'CamingoCode', 'Share-TechMonoTrue', 'AverageMonoBold', Menlo, Monaco, monospace",
+    "editor.fontFamily": "'Operator Mono Light', 'CamingoCode', 'Share-TechMonoTrue', 'Fira Mono for Powerline', 'AverageMonoBold', Menlo, Monaco, monospace",
     "editor.fontSize": 15,
     "editor.wordWrap": "on",
     "terminal.integrated.fontSize": 13,
     "terminal.integrated.lineHeight": 1.3,
-    "sync.gist": "8b95394e5446c9e5c52c3d0fda495d50",
-    "sync.quietSync": true,
+    "sync.gist": "",
+    "sync.quietSync": false,
     "sync.removeExtensions": false,
     "sync.syncExtensions": true,
-    "sync.autoDownload": true,
-    "sync.autoUpload": true,
+    "sync.autoDownload": false,
+    "sync.autoUpload": false,
     "sync.forceDownload": false,
     "gitlens.settings.mode": "advanced",
     "gitlens.remotes": [
         {
-            "domain": "https://gist.github.com/",
+            "domain": "https://YOUR_GHE_HOST/",
             "type": "GitHub"
         }
     ],
@@ -76,7 +76,7 @@
     "css.validate": false,
     "scss.validate": false,
     "eslint.alwaysShowStatus": true,
-    "eslint.nodePath": "/Users/sadhanal/.nvm/versions/node/v8.11.4",
+    "eslint.nodePath": "${userHome}/.nvm/versions/node/v8.11.4",
     "[typescript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
@@ -119,7 +119,7 @@
     "editor.renderWhitespace": "selection",
     "window.title": "${activeEditorMedium}${separator}${rootName}",
     "vscode_custom_css.imports": [
-        "file:////Users/sadhanal/Documents/vs-code-custom.css"
+        "file:///${userHome}/Documents/vs-code-custom.css"
     ],
     "vscode_custom_css.policy": true,
     "sync.forceUpload": true,
@@ -172,12 +172,16 @@
     "liveServer.settings.donotShowInfoMsg": true,
     "redhat.telemetry.enabled": false,
     "jupyter.diagnostics.reservedPythonNames.exclude": [
+        "**/site-packages/**",
+        "**/lib/python/**",
+        "**/lib64/python/**"
     ],
     "cSpell.userWords": [
         "Lynnwood"
     ],
     "editor.accessibilitySupport": "off",
-    "workbench.activityBar.location": "hidden",
     "quokka.automaticRestart": true,
-    "quokka.compactMessageOutput": true
+    "quokka.compactMessageOutput": true,
+    "workbench.iconTheme": "vscode-icons",
+    "git.ignoreRebaseWarning": true
 }

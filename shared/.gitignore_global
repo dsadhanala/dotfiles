@@ -1,0 +1,19 @@
+# Ignore Mac DS_Store files
+.DS_Store
+/build
+.alias
+node_modules
+npm-debug.log
+snippets.txt
+.vscode
+
+*/bazel/data.bzl
+*/bazel/pnpm-workspace.yaml
+*/bazel/pnpmfileSettings.json
+.cursorindexingignore
+pre-commit
+mcp.json
+package-lock.json
+settings.local.json
+settings.json
+kotlin-compiler-13183137902494445661.salive
